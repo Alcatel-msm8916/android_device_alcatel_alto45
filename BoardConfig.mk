@@ -44,6 +44,7 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 # Twrp
 RECOVERY_VARIANT= twrp
 TARGET_RECOVERY_FSTAB := device/alcatel/alto45/recovery/etc/twrp.fstab
+DEVICE_RESOLUTION := 720x1280
 TW_THEME := portrait_hdpi
 RECOVERY_SDCARD_ON_DATA := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
