@@ -1,17 +1,9 @@
-LOCAL_PATH := device/alcatel/alto45
-
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-	LOCAL_KERNEL := $(LOCAL_PATH)/kernel
-else
-	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
+OCAL_PATH := device/alcatel/alto45
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/kernel:kernel \
     $(LOCAL_PATH)/dt.img:dt.img \
-    $(LOCAL_PATH)/recovery/init.recovery.qcom.rc:root/init.recovery.qcom.rc \
-    $(LOCAL_PATH)/recovery/sbin/healthd:root/sbin/healthd
+    $(LOCAL_PATH)/recovery/init.recovery.qcom.rc:root/init.recovery.qcom.rc
 
 $(call inherit-product, build/target/product/full.mk)
 
-PRODUCT_NAME := rio
+PRODUCT_NAME := alto45

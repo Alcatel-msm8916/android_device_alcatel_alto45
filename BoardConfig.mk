@@ -25,8 +25,8 @@ TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
 
 # Kernel
-TARGET_CUSTOM_KERNEL_HEADERS := device/alcatel/alto45/include
-TARGET_PREBUILT_KERNEL := device/alcatel/alto45/kernel
+TARGET_KERNEL_SOURCE := kernel/alcatel/msm8916
+TARGET_KERNEL_CONFIG := cyanogenmod_alto45_defconfig
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 earlyprintk androidboot.selinux=enforcing
 BOARD_MKBOOTIMG_ARGS := --dt device/alcatel/alto45/dt.img --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 BOARD_KERNEL_BASE := 0x80000000
